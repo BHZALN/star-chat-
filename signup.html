@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Chat - Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #2e026d, #6b21a8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+    .signup-container {
+      background-color: #1f1f1f;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      width: 100%;
+      max-width: 400px;
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .signup-container input[type="text"],
+    .signup-container input[type="email"],
+    .signup-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333;
+      color: #fff;
+    }
+    .signup-container button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #9333ea;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .signup-container button:hover {
+      background-color: #7e22ce;
+    }
+    .signup-container .options {
+      font-size: 14px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .signup-container .options input {
+      margin-right: 8px;
+    }
+    .signup-container .login {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .signup-container .login a {
+      color: #c084fc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Your Star Chat Account</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+
+      <div class="options">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login">
+      Already have an account? <a href="#">Login</a>
+    </div>
+  </div>
+
+</body>
+</html>
